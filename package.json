@@ -4,7 +4,7 @@
   "description": "A tiny alternative to require.js",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Open test file in /test/index.html\" && exit 1"
   },
   "author": "Adrian Cooney <cooney.adrian@gmail.com>",
   "license": "MIT",
@@ -12,6 +12,7 @@
     "mocha": "~1.17.1",
     "should": "~3.1.2",
     "gulp": "~3.5.2",
-    "gulp-uglify": "~0.2.0"
+    "gulp-uglify": "~0.2.0",
+    "gulp-rename": "~0.2.2"
   }
 }
