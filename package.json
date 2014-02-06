@@ -1,6 +1,6 @@
 {
   "name": "tinyrequire",
-  "version": "1.0",
+  "version": "1.0.0",
   "description": "A tiny alternative to require.js",
   "main": "index.js",
   "scripts": {
@@ -13,6 +13,7 @@
     "should": "~3.1.2",
     "gulp": "~3.5.2",
     "gulp-uglify": "~0.2.0",
-    "gulp-rename": "~0.2.2"
+    "gulp-rename": "~0.2.2",
+    "gulp-gzip": "0.0.4"
   }
 }
