@@ -11,22 +11,22 @@ There are two ways to use tinyrequire. One is to include `tinyrequire.js` then m
 
 A couple of things are assumed:
 * The name of the dependency is the filename with the `.js` extension.
-* All dependencies are stored in the same directory or it's subdirectories as the main script.
+* All dependencies are stored in the same directory or subdirectories as the main script.
 
-When storing modules in folders, `require`'ing `foo/bar` will look for the `foo/bar` directory and supply the module **with name** `foo/bar`. Tinyrequire does not automatically namespace modules. So any modules in the main directory's subdirectories will have to manually namespaced to reflect their path.
+When storing modules in folders, `require`'ing `foo/bar` will look for the `foo/bar` directory and supply the module **with `define`'d name** `foo/bar` from the file `foo/bar.js`. Tinyrequire does not automatically namespace modules so `define`'ing `foo/bar.js` with the name `bar` will not work. Any modules in the main directory's subdirectories will have to manually namespaced to reflect their path.
 
 ## API
 #### `require( [dependencies, ] callback )`
-Require dependencies for a module. Supply a array of dependencies as the first parameter or optionally all tinyrequire to infer them from the function parameters. Example:
+Require dependencies for a module. Supply a array of dependencies as the first parameter or optionally allow tinyrequire to infer them from the function parameters. Example:
 
 ```js
 require(["foo", "bar"], function(foo, bar) {
-
+	alert(foo, bar);
 });
 
 // Equivalent
 require(function(foo, bar) {
-
+	alert(foo, bar);
 });
 ```
 
