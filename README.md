@@ -1,6 +1,6 @@
 # Tinyrequire.js
 ### To the point dependency management.
-Based on require.js, tinyrequire.js allows you to `define` and `require` your Javascript modules in the browser with automatic dependency management (optionally via parameters) and script injection. At **1547kb**, tinyrequire.js has an incredibly low footprint and doesn't waste time.
+Based on require.js, tinyrequire.js allows you to `define` and `require` your Javascript modules in the browser with automatic dependency management (optionally via parameters) and script injection. At **722 B**, tinyrequire.js has an incredibly low footprint and doesn't waste time.
 
 ## Usage
 There are two ways to use tinyrequire. One is to include `tinyrequire.js` then manually all the other dependancies or two, allow tinyrequire to gather the depedencies for you. Simply add a `data-main` attribute which points to the main entry point for your application on the tinyrequire `script` tag like so:
